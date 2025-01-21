@@ -1,0 +1,1 @@
+// Implement product controller with similar CRUD functionality
