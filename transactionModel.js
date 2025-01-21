@@ -1,0 +1,1 @@
+// Define transaction model for tracking purchases

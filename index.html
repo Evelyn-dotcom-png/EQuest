@@ -1,71 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EQuestpro Marketplace</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horse Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>EQuestpro</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#marketplace">Marketplace</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Horse Marketplace</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#listings">Listings</a>
+      <a href="#add-listing">Add Listing</a>
+    </nav>
+  </header>
 
-    <main>
-        <section id="home">
-            <h2>Welcome to EQuestpro</h2>
-            <p>Your one-stop marketplace for all equine needs.</p>
-        </section>
+  <section id="home">
+    <h2>Welcome to Horse Marketplace</h2>
+    <p>Buy, sell, or lease your horses easily.</p>
+  </section>
 
-        <section id="marketplace">
-            <h2>Marketplace</h2>
-            <div class="product-list">
-                <!-- Example Product -->
-                <div class="product-item">
-                    <img src="https://via.placeholder.com/150" alt="Product Image">
-                    <h3>Product Name</h3>
-                    <p>Price: $XX.XX</p>
-                    <button>Add to Cart</button>
-                </div>
-                <!-- More Products -->
-            </div>
-        </section>
+  <section id="listings">
+    <h2>Horse Listings</h2>
+    <div id="horse-list">
+      <!-- Listings will appear here dynamically -->
+    </div>
+  </section>
 
-        <section id="profile">
-            <h2>Your Profile</h2>
-            <p>Manage your account and listings here.</p>
-        </section>
+  <section id="add-listing">
+    <h2>Add a Horse Listing</h2>
+    <form id="listing-form">
+      <input type="text" id="name" placeholder="Horse Name" required>
+      <input type="text" id="breed" placeholder="Breed" required>
+      <input type="number" id="age" placeholder="Age" required>
+      <input type="number" id="price" placeholder="Price ($)" required>
+      <textarea id="description" placeholder="Description" required></textarea>
+      <button type="submit">Add Listing</button>
+    </form>
+  </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+  <footer>
+    <p>© 2025 Horse Marketplace</p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2023 EQuestpro. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
